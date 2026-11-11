@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a0e">
+  <meta name="description" content="Cognizant All Odisha Chess Academy — learn chess, develop strategic thinking and explore online chess. Call or WhatsApp 8277754614.">
+  <meta property="og:title" content="Cognizant All Odisha Chess Academy">
+  <meta property="og:description" content="Think smart. Move strategically. Master the game.">
+  <meta property="og:type" content="website">
+  <title>Cognizant All Odisha Chess Academy | Think. Move. Master.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090a0e;--bg2:#101219;--panel:rgba(255,255,255,.055);--panel2:#151821;--text:#f5f1e8;--muted:#a9a7a1;--gold:#d7ad58;--gold2:#f7df9a;--line:rgba(215,173,88,.24);--shadow:0 24px 70px rgba(0,0,0,.35);--nav:rgba(9,10,14,.78)}
+    body.light{--bg:#f5f1e8;--bg2:#ebe5d8;--panel:rgba(255,255,255,.72);--panel2:#fffaf0;--text:#171717;--muted:#625f58;--line:rgba(147,103,28,.25);--shadow:0 20px 60px rgba(63,48,19,.12);--nav:rgba(245,241,232,.86)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6;overflow-x:hidden;transition:background .35s,color .35s}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(circle at 15% 15%,rgba(215,173,88,.10),transparent 28%),radial-gradient(circle at 85% 40%,rgba(62,91,143,.12),transparent 30%),linear-gradient(135deg,var(--bg),var(--bg2))}
+    a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.container{width:min(1160px,calc(100% - 44px));margin:auto}.section{padding:105px 0;position:relative}.eyebrow{color:var(--gold);font-size:.76rem;font-weight:700;letter-spacing:.23em;text-transform:uppercase}.section-head{max-width:700px;margin-bottom:42px}.section-head h2{font:700 clamp(2rem,4.3vw,3.35rem)/1.12 Cinzel,serif;letter-spacing:-.035em;margin:13px 0 15px}.section-head p{color:var(--muted);margin:0;max-width:650px}.gold{color:var(--gold2)}.serif{font-family:Cinzel,serif}
+    .light-pass{position:relative;overflow:hidden}.light-pass:after{content:"";position:absolute;top:-120%;left:-45%;width:32%;height:340%;transform:rotate(25deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),rgba(255,225,157,.16),transparent);transition:left .8s ease;pointer-events:none}.light-pass:hover:after{left:125%}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:.88rem;transition:.25s;position:relative;overflow:hidden}.btn-primary{background:linear-gradient(115deg,#a8792d,#f0d38b 50%,#b98a3c);color:#17130b;border:0;box-shadow:0 10px 32px rgba(215,173,88,.2)}.btn-outline{color:var(--text);background:rgba(255,255,255,.025)}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(215,173,88,.17)}.btn-small{padding:10px 15px;font-size:.8rem}
+    /* Loader and navigation */#loader{position:fixed;inset:0;background:#08090d;display:grid;place-items:center;z-index:9999;transition:opacity .65s,visibility .65s}#loader.hide{opacity:0;visibility:hidden}.loader-inner{text-align:center}.loader-king{font-size:4.5rem;color:#e5c274;text-shadow:0 0 38px rgba(231,190,100,.6);animation:float 2s ease-in-out infinite}.loader-name{font:700 1rem Cinzel,serif;letter-spacing:.22em;color:#f4e4bd;margin-top:12px}.loader-line{height:2px;width:190px;background:#383026;margin:20px auto;overflow:hidden}.loader-line:after{content:"";display:block;height:100%;width:45%;background:#e3bd6c;animation:load 1.1s ease-in-out infinite}
+    header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--nav);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:11px;min-width:220px}.brand-mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,#f5dc9b,#a8792d);color:#17130b;font-size:1.55rem;box-shadow:0 5px 22px rgba(215,173,88,.2)}.brand-text{font:700 .85rem/1.25 Cinzel,serif;letter-spacing:.055em}.brand-text span{display:block;color:var(--gold);font:600 .62rem "DM Sans",sans-serif;letter-spacing:.18em;margin-top:4px}.nav-links{display:flex;align-items:center;gap:23px}.nav-links a{font-size:.78rem;font-weight:600;color:var(--muted);transition:.2s}.nav-links a:hover{color:var(--gold2)}.nav-actions{display:flex;align-items:center;gap:9px}.icon-btn{width:39px;height:39px;border:1px solid var(--line);border-radius:50%;background:var(--panel);color:var(--text)}.menu-btn{display:none}
+    /* Hero */.hero{min-height:780px;padding:150px 0 85px;display:flex;align-items:center;position:relative;isolation:isolate;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--bg) 0%,rgba(9,10,14,.92) 42%,rgba(9,10,14,.22) 100%),url('https://images.unsplash.com/photo-1586165368502-1bad197a6461?auto=format&fit=crop&w=2000&q=85') center/cover;opacity:.86}.hero:after{content:"";position:absolute;right:-120px;top:10%;width:650px;height:650px;border-radius:50%;border:1px solid rgba(215,173,88,.16);box-shadow:0 0 0 45px rgba(215,173,88,.025),0 0 0 95px rgba(215,173,88,.018);z-index:-1}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px}.hero-copy{max-width:690px}.hero-kicker{display:inline-flex;align-items:center;gap:10px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(10,11,14,.45);color:#e9cf93;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase}.hero h1{font:800 clamp(2.7rem,6.1vw,5.5rem)/1.02 Cinzel,serif;letter-spacing:-.055em;margin:25px 0 20px;text-wrap:balance}.hero h1 em{font-style:normal;color:var(--gold2);text-shadow:0 0 34px rgba(215,173,88,.22)}.hero-copy>p{max-width:590px;color:#c8c5bd;font-size:1.04rem}.hero-buttons{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}.hero-note{display:flex;gap:22px;flex-wrap:wrap;color:#d4c7a8;font-size:.78rem}.hero-note span:before{content:"✦";color:var(--gold);margin-right:8px}.hero-art{min-height:460px;display:grid;place-items:center;perspective:900px;position:relative}.king-orbit{width:min(420px,90%);aspect-ratio:1;position:relative;display:grid;place-items:center;transform-style:preserve-3d;animation:orbitFloat 7s ease-in-out infinite}.king-orbit:before,.king-orbit:after{content:"";position:absolute;inset:7%;border:1px solid rgba(228,190,105,.42);border-radius:50%;transform:rotateX(68deg) rotateZ(-15deg);box-shadow:0 0 35px rgba(215,173,88,.12)}.king-orbit:after{inset:18%;transform:rotateX(68deg) rotateZ(45deg);border-color:rgba(228,190,105,.23)}.hero-king{font-size:clamp(12rem,25vw,19rem);line-height:1;color:#e7c778;filter:drop-shadow(0 20px 28px rgba(0,0,0,.65)) drop-shadow(0 0 32px rgba(215,173,88,.27));transform:translateZ(65px)}.orbit-label{position:absolute;bottom:3%;right:2%;background:rgba(10,11,15,.7);border:1px solid var(--line);backdrop-filter:blur(12px);padding:13px 17px;border-radius:14px;color:#f1dfb4;font-size:.78rem}
+    .ticker{border-block:1px solid var(--line);background:linear-gradient(90deg,transparent,rgba(215,173,88,.07),transparent);overflow:hidden}.ticker-track{display:flex;gap:55px;white-space:nowrap;padding:17px 0;animation:marquee 28s linear infinite;color:var(--gold2);font:600 .78rem Cinzel,serif;letter-spacing:.13em}.ticker-track span:after{content:"✦";margin-left:55px;color:var(--gold)}
+    /* cards */.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:var(--shadow);position:relative;overflow:hidden;transition:transform .3s,border-color .3s}.card:hover{transform:translateY(-7px);border-color:rgba(235,197,116,.62)}.card-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,rgba(215,173,88,.2),rgba(215,173,88,.04));border:1px solid var(--line);font-size:1.55rem;margin-bottom:18px}.card h3{font:700 1.05rem Cinzel,serif;margin:0 0 10px}.card p{color:var(--muted);font-size:.9rem;margin:0 0 18px}.text-link{color:var(--gold);font-size:.83rem;font-weight:700}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.about-visual{min-height:420px;border-radius:25px;position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(12,13,18,.15),rgba(12,13,18,.65)),url('https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=1100&q=85') center/cover;border:1px solid var(--line);box-shadow:var(--shadow)}.about-stamp{position:absolute;bottom:22px;left:22px;padding:17px 20px;background:rgba(8,9,13,.78);border:1px solid var(--line);border-radius:15px;backdrop-filter:blur(10px);color:#f4dfaa}.about-stamp strong{display:block;font:700 1.2rem Cinzel,serif}.check-list{list-style:none;padding:0;margin:24px 0}.check-list li{padding:9px 0;color:var(--muted)}.check-list li:before{content:"✦";color:var(--gold);margin-right:12px}
+    /* Arena */.arena{background:radial-gradient(ellipse at 50% 0%,rgba(215,173,88,.12),transparent 55%),var(--bg2);border-block:1px solid var(--line)}.arena-shell{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}.arena-preview{min-height:390px;border-radius:22px;border:1px solid var(--line);overflow:hidden;background:#0b0d12;position:relative;box-shadow:var(--shadow)}.arena-preview iframe{width:100%;height:100%;min-height:390px;border:0;background:#0b0d12}.arena-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px;background:radial-gradient(circle,rgba(215,173,88,.17),transparent 55%),linear-gradient(135deg,#0b0d12,#191b24);color:#f8edcf}.arena-fallback .big-piece{font-size:5rem;color:#e8c979;text-shadow:0 0 35px rgba(215,173,88,.35)}.arena-info{padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--panel);display:flex;flex-direction:column;justify-content:center}.arena-info h3{font:700 clamp(1.6rem,3vw,2.3rem) Cinzel,serif;margin:10px 0}.arena-info p{color:var(--muted)}.arena-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.arena-disclaimer{font-size:.75rem!important;margin-top:17px}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.gallery figure{margin:0;height:220px;border-radius:17px;overflow:hidden;position:relative;border:1px solid var(--line);background:var(--panel)}.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.gallery figure:hover img{transform:scale(1.08)}.gallery figcaption{position:absolute;inset:auto 0 0;padding:35px 15px 13px;background:linear-gradient(transparent,rgba(0,0,0,.82));color:white;font-size:.82rem;font-weight:700}
+    .learning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.puzzle{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:23px}.puzzle-board{display:grid;grid-template-columns:repeat(4,1fr);width:164px;aspect-ratio:1;margin:15px auto;background:#d9c79e;border:5px solid #4b3920}.sq{display:grid;place-items:center;font-size:1.55rem;color:#17130b}.sq:nth-child(8n+1),.sq:nth-child(8n+3),.sq:nth-child(8n+6),.sq:nth-child(8n+8){background:#8c6d43}.sq:nth-child(8n+2),.sq:nth-child(8n+4),.sq:nth-child(8n+5),.sq:nth-child(8n+7){background:#ead9b4}.answer{display:none;color:var(--gold);font-size:.85rem;margin-top:12px}.answer.show{display:block}.puzzle button{background:none;border:0;color:var(--gold);font-weight:700;padding:0}
+    .event-panel{display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center;padding:35px;border-radius:23px;background:linear-gradient(115deg,rgba(215,173,88,.16),rgba(255,255,255,.025));border:1px solid var(--line)}.event-panel h3{font:700 1.65rem Cinzel,serif;margin:5px 0}.event-panel p{color:var(--muted);margin:0}
+    .testimonial{max-width:760px;margin:auto;text-align:center;padding:36px;border:1px solid var(--line);border-radius:22px;background:var(--panel)}.quote{font:600 clamp(1.15rem,2.5vw,1.65rem)/1.5 Cinzel,serif}.testimonial small{color:var(--muted)}
+    /* Contact */.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px}.contact-info,.contact-form{padding:30px;border:1px solid var(--line);border-radius:22px;background:var(--panel)}.contact-info h3,.contact-form h3{font:700 1.45rem Cinzel,serif;margin-top:0}.contact-row{display:flex;gap:13px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}.contact-row:last-child{border:0}.contact-row b{display:block;font-size:.9rem}.contact-row span{font-size:.82rem;color:var(--muted)}.field{margin-bottom:14px}.field label{display:block;font-size:.8rem;color:var(--muted);margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border-radius:11px;border:1px solid var(--line);background:var(--bg2);color:var(--text);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{min-height:100px;resize:vertical}.form-note{font-size:.75rem;color:var(--muted);margin:10px 0 0}.footer{padding:45px 0 25px;background:#07080b;color:#f4f0e8;border-top:1px solid rgba(215,173,88,.2)}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}.footer p,.footer a{color:#aaa9a3;font-size:.85rem}.footer h4{font:700 .95rem Cinzel,serif;color:#e8c979}.footer-links{display:grid;gap:8px}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#888;font-size:.75rem}.floating{position:fixed;right:19px;bottom:20px;z-index:900;display:grid;gap:10px}.float-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#101010;background:#d9b35f;font-size:1.35rem;box-shadow:0 8px 25px rgba(0,0,0,.35);transition:.2s}.float-btn.whatsapp{background:#20c96b;color:#fff}.float-btn:hover{transform:translateY(-4px) scale(1.04)}.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+    @keyframes load{from{transform:translateX(-110%)}to{transform:translateX(240%)}}@keyframes float{50%{transform:translateY(-12px)}}@keyframes orbitFloat{50%{transform:translateY(-12px) rotateY(5deg)}}@keyframes marquee{to{transform:translateX(-50%)}}
+    @media(max-width:980px){.nav-links{gap:13px}.nav-links a{font-size:.72rem}.brand{min-width:190px}.hero-grid{grid-template-columns:1fr .8fr}.cards,.learning-grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:760px){.container{width:min(100% - 32px,560px)}.section{padding:76px 0}.nav{height:69px}.brand{min-width:0}.brand-text{font-size:.72rem}.nav-actions .btn{display:none}.menu-btn{display:inline-grid;place-items:center}.nav-links{display:none;position:absolute;top:69px;left:0;right:0;padding:18px 24px 23px;background:var(--nav);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 0;border-bottom:1px solid var(--line);font-size:.88rem}.hero{min-height:unset;padding:125px 0 65px}.hero:before{background:linear-gradient(90deg,rgba(9,10,14,.94),rgba(9,10,14,.76)),url('https://images.unsplash.com/photo-1586165368502-1bad197a6461?auto=format&fit=crop&w=1200&q=80') center/cover}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(2.45rem,12vw,4.1rem)}.hero-art{min-height:300px}.king-orbit{width:300px}.hero-king{font-size:13rem}.about-grid,.arena-shell,.contact-grid{grid-template-columns:1fr;gap:25px}.about-visual{min-height:300px;order:2}.cards,.learning-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.gallery figure{height:160px}.event-panel{grid-template-columns:1fr;padding:25px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}.arena-preview,.arena-preview iframe{min-height:330px}.floating{right:12px;bottom:12px}.float-btn{width:46px;height:46px}}
+    @media(max-width:420px){.brand-mark{width:36px;height:36px}.brand-text{max-width:185px}.hero-buttons .btn{width:100%}.gallery{grid-template-columns:1fr 1fr}.gallery figure{height:140px}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}.copyright{display:block}.copyright span{display:block;margin-top:8px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div id="loader" aria-label="Loading website"><div class="loader-inner"><div class="loader-king">♔</div><div class="loader-name">COGNIZANT CHESS ACADEMY</div><div class="loader-line"></div></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Cognizant All Odisha Chess Academy home">
+        <div class="brand-mark">♔</div><div class="brand-text">COGNIZANT ALL ODISHA<span>CHESS ACADEMY</span></div>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#programs">Programs</a><a href="#online-chess">Online Chess</a><a href="#learning">Learning Zone</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme">☼</button>
+        <a class="btn btn-primary btn-small light-pass" href="https://wa.me/918277754614?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Cognizant%20All%20Odisha%20Chess%20Academy." target="_blank" rel="noopener">Join Academy ↗</a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker">♟ &nbsp; Think beyond the board</div>
+          <h1>THINK SMART.<br><em>MOVE STRATEGICALLY.</em><br>MASTER THE GAME.</h1>
+          <p>Welcome to <strong>Cognizant All Odisha Chess Academy</strong> — a place to discover chess, build confidence, sharpen your thinking and enjoy the challenge of every move.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary light-pass" href="https://wa.me/918277754614?text=Hello%2C%20I%20am%20interested%20in%20joining%20Cognizant%20All%20Odisha%20Chess%20Academy." target="_blank" rel="noopener">JOIN OUR ACADEMY <span>↗</span></a>
+            <a class="btn btn-outline light-pass" href="#online-chess">PLAY CHESS ONLINE ♞</a>
+          </div>
+          <div class="hero-note"><span>Learn at your pace</span><span>Build strategic skills</span><span>Enjoy every move</span></div>
+        </div>
+        <div class="hero-art" aria-label="Decorative golden chess king">
+          <div class="king-orbit"><div class="hero-king">♚</div><div class="orbit-label">STRATEGY · FOCUS · EXCELLENCE</div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>THINK DEEPER</span><span>PLAY SMARTER</span><span>LEARN EVERY DAY</span><span>MAKE YOUR MOVE</span><span>THINK DEEPER</span><span>PLAY SMARTER</span><span>LEARN EVERY DAY</span><span>MAKE YOUR MOVE</span></div></div>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal"><div class="about-stamp"><strong>Every move matters.</strong><span>Build your next great move.</span></div></div>
+        <div class="reveal">
+          <div class="eyebrow">About the academy</div>
+          <div class="section-head"><h2>WHERE STRATEGY <span class="gold">MEETS EXCELLENCE</span></h2><p>Chess is more than a game. It is a journey of patience, imagination, calculation and decision-making. Our academy aims to make that journey engaging for learners at every stage.</p></div>
+          <ul class="check-list"><li>Chess fundamentals for new learners</li><li>Strategic thinking and tactical practice</li><li>Learning paths for different skill levels</li><li>Chess puzzles and analytical exercises</li><li>Preparation and guidance for competitive play</li></ul>
+          <a class="btn btn-outline light-pass" href="#programs">EXPLORE TRAINING PROGRAMS →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="programs">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Learn • Practise • Improve</div><h2>CHESS TRAINING <span class="gold">PROGRAMS</span></h2><p>Explore learning areas designed to support a student's progress from first moves to deeper strategic understanding. Ask the academy about current batches and availability.</p></div>
+        <div class="cards">
+          <article class="card light-pass reveal"><div class="card-icon">♙</div><h3>Beginner Chess Training</h3><p>Understand the board, piece movements, rules, check, checkmate and the fundamentals of confident play.</p><a class="text-link" href="#contact">Enquire about classes ↗</a></article>
+          <article class="card light-pass reveal"><div class="card-icon">♘</div><h3>Intermediate Chess</h3><p>Build stronger plans through opening principles, positional ideas, calculation and practical exercises.</p><a class="text-link" href="#contact">Enquire about classes ↗</a></article>
+          <article class="card light-pass reveal"><div class="card-icon">♛</div><h3>Advanced Preparation</h3><p>Explore deeper analysis, complex positions, endgame technique and structured training routines.</p><a class="text-link" href="#contact">Enquire about classes ↗</a></article>
+          <article class="card light-pass reveal"><div class="card-icon">⚔</div><h3>Tactics & Strategy</h3><p>Practise forks, pins, skewers, discovered attacks, combinations and long-term strategic planning.</p><a class="text-link" href="#contact">Enquire about classes ↗</a></article>
+          <article class="card light-pass reveal"><div class="card-icon">🧩</div><h3>Chess Puzzles</h3><p>Develop pattern recognition and calculation with engaging chess positions and guided practice.</p><a class="text-link" href="#learning">Explore learning zone ↗</a></article>
+          <article class="card light-pass reveal"><div class="card-icon">🏆</div><h3>Tournament Preparation</h3><p>Learn practical preparation habits, time management, focus and how to review your games.</p><a class="text-link" href="#contact">Enquire about training ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section arena" id="online-chess">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Featured digital experience</div><h2>ENTER THE WORLD OF <span class="gold">ONLINE CHESS</span></h2><p>Take your interest beyond the classroom and explore the Syam Chessverse online chess experience.</p></div>
+        <div class="arena-shell">
+          <div class="arena-preview reveal">
+            <iframe id="chessFrame" src="https://syamchessverse11.vercel.app/" title="Syam Chessverse online chess preview" loading="lazy" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <div class="arena-fallback" id="arenaFallback"><div class="big-piece">♚</div><h3 class="serif">SYAM CHESSVERSE</h3><p>Open the online chess arena and start exploring.</p><a class="btn btn-primary" href="https://syamchessverse11.vercel.app/" target="_blank" rel="noopener">OPEN CHESS ARENA ↗</a></div>
+          </div>
+          <div class="arena-info reveal">
+            <div class="eyebrow">Play • Explore • Challenge</div><h3>YOUR NEXT MOVE<br><span class="gold">STARTS HERE.</span></h3>
+            <p>Visit Syam Chessverse to experience its online chess platform. Open it in a new tab for the full experience, especially if your browser or the external site does not allow an embedded preview.</p>
+            <div class="arena-actions">
+              <a class="btn btn-primary light-pass" href="https://syamchessverse11.vercel.app/" target="_blank" rel="noopener">PLAY CHESS ONLINE ↗</a>
+              <a class="btn btn-outline" href="https://syamchessverse11.vercel.app/" target="_blank" rel="noopener">EXPLORE FULL ARENA ↗</a>
+            </div>
+            <p class="arena-disclaimer">Syam Chessverse is an external website. Its availability, features and embedding permissions are controlled by that website.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="learning">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Sharpen your mind</div><h2>CHESS KNOWLEDGE <span class="gold">ZONE</span></h2><p>Start with the essentials and keep exploring. These quick learning cards introduce important chess concepts.</p></div>
+        <div class="learning-grid">
+          <article class="puzzle reveal"><div class="eyebrow">Fundamentals</div><h3 class="serif">Know the pieces</h3><p style="color:var(--muted)">Each piece moves differently. Learn how the king, queen, rook, bishop, knight and pawns work together.</p><a class="text-link" href="https://en.wikipedia.org/wiki/Chess_piece" target="_blank" rel="noopener">Explore chess pieces ↗</a></article>
+          <article class="puzzle reveal"><div class="eyebrow">Strategy</div><h3 class="serif">Control the centre</h3><p style="color:var(--muted)">Central squares influence the activity and mobility of your pieces. Develop with purpose and coordinate your forces.</p><a class="text-link" href="https://en.wikipedia.org/wiki/Chess_strategy" target="_blank" rel="noopener">Explore chess strategy ↗</a></article>
+          <article class="puzzle reveal"><div class="eyebrow">Tactics</div><h3 class="serif">Spot the fork</h3><p style="color:var(--muted)">A fork is a double attack in which one piece attacks two or more enemy pieces at the same time.</p><a class="text-link" href="https://en.wikipedia.org/wiki/Fork_(chess)" target="_blank" rel="noopener">Learn chess tactics ↗</a></article>
+        </div>
+        <div class="puzzle reveal" style="margin-top:18px;text-align:center">
+          <div class="eyebrow">Mini challenge · illustrative position</div><h3 class="serif">Can you find the winning idea?</h3><p style="color:var(--muted)">Explore this simple pattern: White's queen and rook coordinate against the black king. Think about checks and forcing moves.</p>
+          <div class="puzzle-board" aria-label="Decorative chess pattern"><div class="sq">♜</div><div class="sq">♚</div><div class="sq">♛</div><div class="sq">♟</div><div class="sq">♟</div><div class="sq">♙</div><div class="sq">♔</div><div class="sq">♖</div><div class="sq">♙</div><div class="sq">♙</div><div class="sq">♙</div><div class="sq">♙</div><div class="sq">♙</div><div class="sq">♙</div><div class="sq">♙</div><div class="sq">♙</div></div>
+          <button type="button" class="light-pass" onclick="document.getElementById('puzzleAnswer').classList.toggle('show')">REVEAL LEARNING TIP ↓</button><div class="answer" id="puzzleAnswer">Look for forcing moves first: checks, captures and threats. This is an illustrative teaching pattern, not a validated checkmate puzzle.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">The world of chess</div><h2>CHESS <span class="gold">GALLERY</span></h2><p>A visual celebration of chess learning, focus and competition. Replace these illustrative stock images with genuine academy photographs when available.</p></div>
+        <div class="gallery">
+          <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?auto=format&fit=crop&w=700&q=80" alt="Chessboard and pieces"><figcaption>The art of the game</figcaption></figure>
+          <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=700&q=80" alt="Chess pieces on a board"><figcaption>Plan every move</figcaption></figure>
+          <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1560174038-da43ac74f01b?auto=format&fit=crop&w=700&q=80" alt="Chess game close-up"><figcaption>Focus and patience</figcaption></figure>
+          <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=700&q=80" alt="Chess board strategy"><figcaption>Strategy in action</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container"><div class="event-panel reveal"><div><div class="eyebrow">Events & tournament enquiries</div><h3>READY TO TAKE YOUR GAME FURTHER?</h3><p>Contact the academy for information about training, events, tournament preparation and current opportunities.</p></div><a class="btn btn-primary light-pass" href="https://wa.me/918277754614?text=Hello%2C%20please%20share%20information%20about%20chess%20events%20and%20tournament%20preparation." target="_blank" rel="noopener">ENQUIRE NOW ↗</a></div></div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div class="container"><div class="section-head reveal" style="margin-inline:auto;text-align:center"><div class="eyebrow">A community of learners</div><h2>LEARNING WITH <span class="gold">PURPOSE</span></h2><p>We look forward to sharing genuine student and parent experiences here as the academy community grows.</p></div><div class="testimonial reveal"><div class="quote">“Every chess game is an opportunity to think, learn and make a better next move.”</div><p><small>Our learning philosophy · Cognizant All Odisha Chess Academy</small></p></div></div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Let's make your move</div><h2>CONNECT WITH <span class="gold">OUR ACADEMY</span></h2><p>Have a question about chess classes or learning opportunities? Call or send your enquiry through WhatsApp.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info reveal"><h3>Get in touch</h3>
+            <div class="contact-row"><div class="card-icon" style="margin:0">☎</div><div><b>Call the academy</b><span><a href="tel:+918277754614">+91 82777 54614</a></span></div></div>
+            <div class="contact-row"><div class="card-icon" style="margin:0">◉</div><div><b>WhatsApp enquiries</b><span><a href="https://wa.me/918277754614" target="_blank" rel="noopener">Chat with us</a></span></div></div>
+            <div class="contact-row"><div class="card-icon" style="margin:0">♟</div><div><b>Online chess</b><span><a href="https://syamchessverse11.vercel.app/" target="_blank" rel="noopener">Visit Syam Chessverse ↗</a></span></div></div>
+            <p class="form-note">Academy address and class timings can be added here once confirmed.</p>
+          </div>
+          <form class="contact-form reveal" id="enquiryForm"><h3>Send an enquiry</h3>
+            <div class="field"><label for="studentName">Student name *</label><input id="studentName" name="studentName" required maxlength="80" placeholder="Enter student name"></div>
+            <div class="field"><label for="parentName">Parent / guardian name</label><input id="parentName" name="parentName" maxlength="80" placeholder="Enter parent or guardian name"></div>
+            <div class="field"><label for="phone">Your contact number *</label><input id="phone" name="phone" type="tel" required inputmode="tel" pattern="[0-9+() -]{7,18}" placeholder="Enter phone number"></div>
+            <div class="field"><label for="ageGroup">Student age group</label><select id="ageGroup" name="ageGroup"><option value="">Select age group</option><option>Under 8</option><option>8–12</option><option>13–17</option><option>18 and above</option></select></div>
+            <div class="field"><label for="level">Chess experience</label><select id="level" name="level"><option value="">Select experience</option><option>Beginner</option><option>Some experience</option><option>Intermediate</option><option>Advanced</option></select></div>
+            <div class="field"><label for="message">Your message</label><textarea id="message" name="message" maxlength="700" placeholder="Tell us what you would like to learn..."></textarea></div>
+            <button class="btn btn-primary light-pass" type="submit">SEND ENQUIRY ON WHATSAPP ↗</button>
+            <p class="form-note">Your details will be placed into a WhatsApp message for you to review and send. This form does not store or submit data to a server.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><a class="brand" href="#home"><div class="brand-mark">♔</div><div class="brand-text">COGNIZANT ALL ODISHA<span>CHESS ACADEMY</span></div></a><p>Think smart. Move strategically. Master the game. Discover the joy and discipline of chess.</p></div>
+        <div><h4>Explore</h4><div class="footer-links"><a href="#about">About the Academy</a><a href="#programs">Training Programs</a><a href="#learning">Learning Zone</a><a href="#gallery">Gallery</a></div></div>
+        <div><h4>Play & Connect</h4><div class="footer-links"><a href="https://syamchessverse11.vercel.app/" target="_blank" rel="noopener">Syam Chessverse ↗</a><a href="tel:+918277754614">Call 8277754614</a><a href="https://wa.me/918277754614" target="_blank" rel="noopener">WhatsApp us ↗</a><a href="#contact">Send an enquiry</a></div></div>
+      </div>
+      <div class="copyright"><span>© <span id="year"></span> Cognizant All Odisha Chess Academy. All rights reserved.</span><span>Website Designed & Developed by <strong style="color:#e8c979">SKDAS</strong></span></div>
+    </div>
+  </footer>
+
+  <div class="floating"><a class="float-btn whatsapp" href="https://wa.me/918277754614?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20the%20chess%20academy." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">◉</a><a class="float-btn" href="tel:+918277754614" aria-label="Call the academy">☎</a></div>
+
+  <script>
+    // Preloader
+    window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('hide'),450));
+    setTimeout(()=>document.getElementById('loader').classList.add('hide'),2600);
+    document.getElementById('year').textContent=new Date().getFullYear();
+
+    // Mobile navigation
+    const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+
+    // Theme toggle (session-only; no storage required)
+    document.getElementById('themeToggle').addEventListener('click',()=>{document.body.classList.toggle('light');document.getElementById('themeToggle').textContent=document.body.classList.contains('light')?'☾':'☼';});
+
+    // Reveal-on-scroll, with reduced-motion fallback
+    const revealEls=document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+      revealEls.forEach(el=>observer.observe(el));
+    }else{revealEls.forEach(el=>el.classList.add('visible'));}
+
+    // External chess preview: keep a branded launch fallback visible until iframe reports load.
+    const chessFrame=document.getElementById('chessFrame'),fallback=document.getElementById('arenaFallback');
+    chessFrame.addEventListener('load',()=>{fallback.style.display='none';});
+    // A site can load but refuse framing via browser policy; the direct-open buttons remain available.
+
+    // WhatsApp enquiry form
+    document.getElementById('enquiryForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!this.reportValidity()) return;
+      const data=new FormData(this);
+      const lines=[
+        'Hello, I would like to enquire about Cognizant All Odisha Chess Academy.',
+        'Student name: '+(data.get('studentName')||''),
+        'Parent/guardian: '+(data.get('parentName')||'Not provided'),
+        'Contact number: '+(data.get('phone')||''),
+        'Age group: '+(data.get('ageGroup')||'Not specified'),
+        'Chess experience: '+(data.get('level')||'Not specified'),
+        'Message: '+(data.get('message')||'Not provided')
+      ];
+      const url='https://wa.me/918277754614?text='+encodeURIComponent(lines.join('\n'));
+      window.open(url,'_blank','noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
